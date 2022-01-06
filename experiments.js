@@ -1,5 +1,13 @@
+const fn5 = () => {
+    console.log("timeout")
+}
+
+const fn4 = () => {
+    fn5()
+}
+
 const fn3 = () => {
-    setTimeout(() => console.log("timeout") ,100)
+    setTimeout(() => fn4(),3000)
     console.log("fn3")
 }
 
