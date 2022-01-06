@@ -1,4 +1,5 @@
 const fn3 = () => {
+    setTimeout(() => console.log("timeout") ,100)
     console.log("fn3")
 }
 
@@ -15,3 +16,4 @@ const main = () => {
 }
 
 main()
+console.log("end")
